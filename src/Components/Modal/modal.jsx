@@ -7,8 +7,7 @@ import arrow from './../../Images/Vector (12).png'
 export const Modal = ({ open, onClose }) => {
     if (!open) return null
     return (
-        <div onClick={onClose} class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="
-        connectwalletModal">
+        <div className="bg-black bg-opacity-50 backdrop-blur-lg" id="connectwalletModal" onClick={onClose} >
             <div className="modalContainer">
                 <div className="walletheader">
                     <h2>Connect Wallet</h2>
@@ -28,10 +27,7 @@ export const Modal = ({ open, onClose }) => {
                     </div>
                 </div>
             </div>
-
         </div>
-
-
 
     )
 }

@@ -41,19 +41,19 @@ export const Footer = () => {
                     </ul>
                 </div>
                 <div className="places">
-                    <p>Places</p>
+                    <a href="/place" id='placesa'>Places </a>
                     <ul className='ul'>
                         <li>
-                            <a href="/">Castle</a>
+                            <a href="/place">Castle</a>
                         </li>
                         <li>
-                            <a href="/">farms</a>
+                            <a href="/place">farms</a>
                         </li>
                         <li>
-                            <a href="/">Beach</a>
+                            <a href="/place">Beach</a>
                         </li>
                         <li>
-                            <a href="/">Learn More</a>
+                            <a href="/place">Learn More</a>
                         </li>
                     </ul>
 
