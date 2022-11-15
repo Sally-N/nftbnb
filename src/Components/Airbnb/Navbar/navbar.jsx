@@ -1,13 +1,17 @@
 import '../../Airbnb/airbnb.css';
+import navHouse from './../../../Images/Vector (5).png';
+import navMet from './../../../Images/Vector (4).png'
+import { useState } from 'react';
 
-const Navbar = () => {
+export const Navbar = () => {
+    // eslint-disable-next-line no-unused-vars
+    const [openModal, setOpenModal] = useState(false);
     return (
-        <nav className="navbar-container">
-            <div className="container-fluid">
-
-                <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" className="" />
-                <h4>Metabnb</h4>
-                <div className="collapse navbar-collapse" id="navbarNav">
+        <div>
+            <nav className="navbar-container">
+                <div className="nav-container">
+                    <img src={navHouse} alt="Logo" className="house" />
+                    <img src={navMet} alt="" className='Metabnb' />
                     <ul className="navbar-nav">
                         <li>
                             <a className="nav-link" aria-current="page" href="#home">Home</a>
@@ -22,23 +26,18 @@ const Navbar = () => {
                             <a className="nav-link" href="comunity">Community</a>
 
                         </li>
-
                     </ul>
+                    <button id="connectwallet" onClick={() => setOpenModal(true)}>Connect Wallet</button>
                 </div>
-                <button className="modal-dialog modal-dialog-centered" id="myModal">
-                    ...
-                </button>
-            </div>
-        </nav>
+            </nav>
+        </div>
     )
 
 }
+// const Connectwalletbtn = document.getElementById('connectwallet')
+// // const myInput = document.getElementById('myInput')
 
-// const myModal = document.getElementById('myModal')
-// const myInput = document.getElementById('myInput')
-
-// myModal.addEventListener('shown.bs.modal', () => {
-//   myInput.focus()
+// Modal.addEventListener('shown.bs.modal', () => {
+//   Connectwalletbtn.focus()
 // })
 
-export default Navbar;
