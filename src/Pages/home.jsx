@@ -6,7 +6,7 @@ import AdventureSection from "../Components/Airbnb/Adventure/adventure";
 import { MetabnbSection } from "../Components/Airbnb/MetabnbNfts/metabnbnfts";
 import { Footer } from "../Components/Airbnb/MetabnbFooter/footer";
 import { Modal } from "flowbite-react";
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const HomePage = () => {
     // eslint-disable-next-line no-unused-vars
@@ -14,16 +14,13 @@ const HomePage = () => {
 
     return (
         <div className="page">
-            <div className="smallsection">
-                <Navbar />
-                <RentaPlace />
-                <Modal open={showMyModal}/>
-
-                <Tokens />
-                <AdventureSection />
-                <MetabnbSection />
-                <Footer />
-            </div>
+            <Modal open={showMyModal} />
+            <Navbar />
+            <RentaPlace />
+            <Tokens />
+            <AdventureSection />
+            <MetabnbSection />
+            <Footer />
         </div>
 
     );

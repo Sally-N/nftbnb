@@ -2,6 +2,7 @@ import './../Airbnb/airbnb.css'
 import mimg from './../../Images/image 66.png'
 import wimg from './../../Images/image 69.png'
 import arrow from './../../Images/Vector (12).png'
+// import x from './../../Images/x.png'
 
 
 export const Modal = ({ open, onClose }) => {
@@ -14,15 +15,19 @@ export const Modal = ({ open, onClose }) => {
                     <p onClick={onClose} className='CloseBtn'>X</p>
                 </div>
                 <div className="walletbody">
-                    <p>Choose your preffered wallet:</p>
+                    <p id='choosew'>Choose your preffered wallet:</p>
                     <div className="metamask">
-                        <img src={mimg} alt="" />
-                        <p>Metamask</p>
+                        <div className="imgText">
+                            <img src={mimg} alt="" />
+                            <p>Metamask</p>
+                        </div>
                         <img src={arrow} alt="" />
                     </div>
                     <div className="metamask">
-                        <img src={wimg} alt="" />
-                        <p>Wallet Connect</p>
+                        <div className="imgText">
+                            <img src={wimg} alt="" />
+                            <p>Wallet Connect</p>
+                        </div>
                         <img src={arrow} alt="" />
                     </div>
                 </div>
